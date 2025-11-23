@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name ="author" content ="Kayode Bankole">
     <title>Wonderlust Travel- Destination Majorca</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+        <!-- SKIP LINKS -->
+    <a class="sr-only" href="#main" >Skip to main content</a>
+    <a class="sr-only" href="#plan-your-trip">Skip to plan your trip</a>
+    <a class="sr-only" href="#testimonials">Skip to testimonials</a>
+    <a class="sr-only" href="#about-your-destination">Skip to about your destination</a>
+    <a class="sr-only" href="#contact-us">Skip to contact us</a>
+
     <header>
-        Destination Majorca
-        Let Wonderlust Travel help you plan the trip of your dreams!
-        Specializing in unforgettable experiences, we offer curated trips to the breathtaking island of Majorca, a hidden gem in the Mediterranean. Whether you crave sun-drenched beaches, charming villages, or thrilling outdoor adventures, our expert team will craft the perfect itinerary tailored just for you.
+        <h1>Destination Majorca</h1>
+        <p>Let Wonderlust Travel help you plan the trip of your dreams!
+        Specializing in unforgettable experiences, we offer curated trips to the breathtaking island of Majorca, a hidden gem in the Mediterranean. Whether you crave sun-drenched beaches, charming villages, or thrilling outdoor adventures, our expert team will craft the perfect itinerary tailored just for you.</p>
     </header>
     <nav>
-        Main Navigation
+        <h2>Main Navigation</h2>
         <input type="checkbox" id="dropdown">
         <label for="dropdown"><span></span></label>
         <ul>
@@ -27,29 +35,42 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
-    <main>
+    <main id="main">
         <article>
-            Majorca
+            <h2>Majorca</h2>
             <section id="intro">
 
-                Introduction
-                Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.
+                <h3>Introduction</h3>
+                <p> Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
                 <div>
-                <!--Responsive Image for Art Direction
-                    images/majorca-beach-square-s.jpg
-                    images/majorca-beach-vertical-m.jpg
-                    images/majorca-beach-horizontal-l.jpg
+                <picture>
+                    <!-- Square small -->
+                    <source 
+                        srcset="images/majorca-beach-square-s.jpg" 
+                        media="(max-width: 404px)">
 
-                    404px, 920px, 1280px
-                    -->
+                    <!-- Vertical medium -->
+                    <source 
+                        srcset="images/majorca-beach-vertical-m.jpg" 
+                        media="(max-width: 920px)">
+
+                    <!-- Horizontal large -->
+                    <source 
+                        srcset="images/majorca-beach-horizontal-l.jpg" 
+                        media="(min-width: 1280px)">
+
+                    <img 
+                        src="images/majorca-beach-horizontal-l.jpg" 
+                        alt="A beach in Majorca with turquoise waves at sunset">
+                </picture>
                     <small>Photo by <a href="https://unsplash.com/@charliefirth?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Charlie Firth</a> on <a href="https://unsplash.com/photos/sea-waves-crashing-on-shore-during-sunset-HQJIQjXq1HI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></small>
                 </div>
             </section>
             <section id="plan-your-trip">
-                Plan Your Trip
+                <h3>Plan Your Trip</h3>
 
                 <section class="plan">
-                    How to Get There
+                    <h4>How to Get There</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plane" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M16 10h4a2 2 0 0 1 0 4h-4l-4 7h-3l2 -7h-4l-2 2h-3l2 -4l-2 -4h3l2 2h4l-2 -7h3z" />
@@ -57,7 +78,7 @@
                     <a href="#" title="Search for flights">Search Flights</a>
                 </section>
                 <section class="plan">
-                    Places to Stay
+                    <h4>Places to Stay</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bed" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M3 7v11m0 -4h18m0 4v-8a2 2 0 0 0 -2 -2h-8v6" />
@@ -66,7 +87,7 @@
                     <a href="#" title="Search for Hotels">Search Hotels</a>
                 </section>
                 <section class="plan">
-                    Things to do
+                    <h4>Things to do</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sailboat" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M2 20a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1a2.4 2.4 0 0 1 2 -1a2.4 2.4 0 0 1 2 1a2.4 2.4 0 0 0 2 1a2.4 2.4 0 0 0 2 -1" />
@@ -77,7 +98,7 @@
                     <a href="#" title="Search for Activities">Search Activity</a>
                 </section>
                 <section class="plan">
-                    Where to Eat
+                    <h4>Where to Eat</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tools-kitchen-2" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M19 3v12h-5c-.023 -3.681 .184 -7.406 5 -12zm0 12v6h-1v-3m-10 -14v17m-3 -17v3a3 3 0 1 0 6 0v-3" />
@@ -86,78 +107,78 @@
                 </section>
             </section>
             <section id="testimonials">
-                Testimonials
+                <h3>Testimonials</h3>
 
                 <section>
-                    <!--Responsive Image for resolution switching
-                        images/miranda-blake-L.png" 
-                        images/miranda-blake-S.png 404w
-                        images/miranda-blake-M.png 920w
-                        images/miranda-blake-L.png 1280w
-                    -->
+                  <picture>
+                        <source srcset="images/miranda-blake-S.png" media="(max-width:404px)">
+                        <source srcset="images/miranda-blake-M.png" media="(max-width:920px)">
+                        <source srcset="images/miranda-blake-L.png" media="(min-width:1280px)">
+                        <img src="images/miranda-blake-L.png" alt="Portrait of Miranda Blake">
+                    </picture>
                         <div>
-                        Miranda Blake
+                        <h4>Miranda Blake</h4>
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>London, England</dd>
                         </dl>
-                        "I traveled here for business, but my stay was extended. Now it is my home."
+                        <blockquote>"I traveled here for business, but my stay was extended. Now it is my home."</blockquote>
                     </div>
                 </section>
                 <section>
-                    <!--Responsive Image for resolution switching
-                        images/max-winter-L.png
-                        images/max-winter-S.png 404w
-                        images/max-winter-M.png 920w
-                        images/max-winter-L.png 1280w
-                    -->
+                    <picture>
+                        <source srcset="images/max-winter-S.png" media="(max-width:404px)">
+                        <source srcset="images/max-winter-M.png" media="(max-width:920px)">
+                        <source srcset="images/max-winter-L.png" media="(min-width:1280px)">
+                        <img src="images/max-winter-L.png" alt="Portrait of Max Winter">
+                    </picture>
                         <div>
-                        Max Winter
+                        <h4>Max Winter</h4>
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>Berlin, Germany</dd>
                         </dl>
-                        "Great escape from my reality. Beautiful sunsets, wonderful people, great beer."
+                        <blockquote>"Great escape from my reality. Beautiful sunsets, wonderful people, great beer."</blockquote>
                     </div>
                 </section>
                 <section>
-                    <!--Responsive Image for resolution switching
-                        images/ines-villegoes-L.png
-                        images/ines-villegoes-S.png 404w
-                        images/ines-villegoes-M.png 920w
-                        images/ines-villegoes-L.png 1280w 
-                    -->
+                    <picture>
+                        <source srcset="images/ines-villegoes-S.png" media="(max-width:404px)">
+                        <source srcset="images/ines-villegoes-M.png" media="(max-width:920px)">
+                        <source srcset="images/ines-villegoes-L.png" media="(min-width:1280px)">
+                        <img src="images/ines-villegoes-L.png" alt="Portrait of Inés Villegoes">
+                    </picture>
                     <div>
-                        Inés Villegoes
+                        <h4>Inés Villegoes</h4>
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>Barcelona, Spain</dd>
                         </dl>
-                        "A very safe environment for all travelers."
+                        <blockquote>"A very safe environment for all travelers."</blockquote>
                     </div>
                 </section>
                 <section>
-                    <!--Responsive Image for resolution switching
-                        images/carmen-lorenzo-L.png
-                        images/carmen-lorenzo-S.png 404w
-                        images/carmen-lorenzo-M.png 920w
-                        images/carmen-lorenzo-L.png 1280w
-                    -->
+                    <picture>
+                        <source srcset="images/carmen-lorenzo-S.png" media="(max-width:404px)">
+                        <source srcset="images/carmen-lorenzo-M.png" media="(max-width:920px)">
+                        <source srcset="images/carmen-lorenzo-L.png" media="(min-width:1280px)">
+                        <img src="images/carmen-lorenzo-L.png" alt="Portrait of Carmen Lorenzo">
+                    </picture>
                         <div>
-                        Carmen Lorenzo
+                        <h4>Carmen Lorenzo</h4>
                         <dl>
                             <dt>Traveling From:</dt>
                             <dd>Madrid, Spain</dd>
                         </dl>
-                        "Live, laugh, love-- everything you need in Majorca."
+                        <blockquote>"Live, laugh, love-- everything you need in Majorca."</blockquote>
                     </div>
                 </section>
             </section>
             <section id="about-your-destination">
-                About Your Destination
+                <h3>About Your Destination</h3>
 
                 <section>
-                    Size
+                    <h4>Size</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ruler-2" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M17 3l4 4l-14 14l-4 -4z" />
@@ -172,7 +193,7 @@
                     </dl>
                 </section>
                 <section>
-                    Elevation
+                    <h4>Elevation</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-top-bar" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <line x1="12" y1="21" x2="12" y2="3" />
@@ -185,7 +206,7 @@
                     </dl>
                 </section>
                 <section>
-                    Location
+                    <h4>Location</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <circle cx="12" cy="11" r="3" />
@@ -197,7 +218,7 @@
                     </dl>
                 </section>
                 <section>
-                    Population
+                    <h4>Population</h4>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="100" height="100" viewBox="0 0 24 24" stroke-width="1" stroke="#1B263B" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <circle cx="9" cy="7" r="4" />
@@ -215,43 +236,39 @@
     </main>
     <footer>
         <section id="contact-us">
-            Contact Us <span id="required">(*required)</span>
-            
+            <h2>Contact Us <span id="required">(*required)</span></h2>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
                 <div>
-                    <label>First Name<span>*</span></label>
-                    <input>
+                    <label for="firstName">First Name <span class="required">*</span></label>
+                    <input type="text" id="firstName" name="firstName" required>
                 </div>
                 <div>
-                    <label>Last Name<span>*</span></label>
-                    <input>
+                    <label for="lastName">Last Name <span class="required">*</span></label>
+                    <input type="text" id="lastName" name="lastName" required>
                 </div>
                 <div>
-                    <label>Email<span>*</span></label>
-                    <input>
+                    <label for="email">Email<span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <div>
-                    <label>Phone<span>*</span></label>
-                    <input>
+                    <label for="phone">Phone<span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" required>
                 </div>
                 <fieldset id="preferred-contact">
-                <legend>Preferred Contact Method<span>*</span></legend>
-                    <div> 
-                        <input>
-                        <label>Email</label>
+                    <legend>Preferred Contact Method <span class="required">*</span></legend>
+                    <div>
+                        <input type="radio" id="contactEmail" name="preferredContact" value="email" required>
+                        <label for="contactEmail">Email</label>
                     </div>
                     <div>
-                        <input>
-                        <label>Text</label>
+                        <input type="radio" id="contactPhone" name="preferredContact" value="phone">
+                        <label for="contactPhone">Phone</label>
                     </div>
-                    <div>
-                        <input>
-                        <label>Phone</label>
-                    </div>
-                </fieldset>
+                    </fieldset>
                 <fieldset id="destination">
                     <legend>Destination<span>*</span></legend>
-                    <select id="select-destination">
-                        <option>Choose</option>
+                    <select id="select-destination" name="select-destination" required>
+                        <option value="">-- Choose --</option>
                         <option>Barcelona</option>
                         <option>Granada</option>
                         <option>Ibiza</option>
@@ -265,8 +282,8 @@
                 </fieldset>
                 <fieldset id="travelTime">
                     <legend>Travel Time<span>*</span></legend>
-                    <select id="select-travel-time">
-                        <option>Choose</option>
+                    <select id="select-travel-time" name="select-travel-time" required>
+                        <option value="">-- Choose --</option>
                         <option>Fall</option>
                         <option>Winter</option>
                         <option>Spring</option>
@@ -274,11 +291,11 @@
                         <option>Flexible</option>
                     </select>
                 </fieldset>
-                <input>
-            
+                <input type="submit" id="submit" value="Submit Form">
+            </form>
         </section>
         <section id="legal">
-            Legal
+            <h2>Legal</h2>
             <small>Copyright 2021 Wonderlust</small>
             <a href="#">Privacy Statement</a>
             <a href="#">Terms of Service</a>
